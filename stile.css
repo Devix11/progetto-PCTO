@@ -19,31 +19,31 @@ header,footer{
 
 .BOX{
 	border: 2px solid darkgray;
-	height: 200px;
-	padding: 10px;
+	height: 250px;
+	padding: 15px;
 	
 	box-sizing: border-box;
 	float:left;
 }
 
 .ROSSO{
-	background-color: red;
+	background-color: #f00;
 	width: 25%;
 }
 
 .VERDE{
-	background-color: green;
+	background-color: #0f0;
 	width: 25%;
 }
 
 .GIALLO{
-	background-color: yellow;
+	background-color: #ff0;
 	width: 	25%;
 	float: left;
 }
 
 .BLU{
-	background-color: blue;
+	background-color: #00f;
 	width: 25%;
 }
 
