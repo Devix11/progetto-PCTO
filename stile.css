@@ -23,26 +23,27 @@ header,footer{
 	padding: 15px;
 	border-radius: 10px;
 	box-sizing: border-box;
+	float:left;
 }
 
 .ROSSO{
 	background-color: red;
-	float: left;
+	width: 50%;
 }
 
 .VERDE{
 	background-color: green;
-	float: left;
+	width: 50%;
 }
 
 .GIALLO{
 	background-color: yellow;
-	float: left;
+	width: 	50%;
 }
 
 .BLU{
 	background-color: blue;
-	float: left;
+	width: 50%;
 }
 
 main::after{
@@ -53,6 +54,9 @@ main::after{
 
 @media only screen and (max-width:900px){
 	.ROSSO{
+		width: 50%;
+	}
+	.VERDE{
 		width: 50%;
 	}
 }
