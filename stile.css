@@ -1,0 +1,56 @@
+#container{
+	width: 1000px;
+	border: 1px solid red;
+	margin: auto;
+	border-radius: 10px;
+}
+
+body{
+	background-color: #575757;
+}
+
+header,footer{
+	background-color: black;
+	color: lightgray;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.BOX{
+	border: 2px solid darkgray;
+	height: 200px;
+	padding: 15px;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+.ROSSO{
+	background-color: red;
+	float: left;
+}
+
+.VERDE{
+	background-color: green;
+	float: left;
+}
+
+.GIALLO{
+	background-color: yellow;
+	float: left;
+}
+
+.BLU{
+	background-color: blue;
+	float: left;
+}
+
+main::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+@media only screen and (max-width:900px){
+
+}
