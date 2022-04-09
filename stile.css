@@ -39,6 +39,7 @@ header,footer{
 .GIALLO{
 	background-color: yellow;
 	width: 	25%;
+	float: left;
 }
 
 .BLU{
