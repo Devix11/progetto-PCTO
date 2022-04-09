@@ -60,4 +60,10 @@ main::after{
 	.VERDE{
 		width: 50%;
 	}
+	.GIALLO{
+		width: 50%;
+	}
+	.BLU{
+		width: 50%;
+	}
 }
