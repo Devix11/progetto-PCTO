@@ -1,11 +1,44 @@
 body{
     background-color: #FFF3E4;
     font-family: 'Quicksand', sans-serif;
+    clear:both;
+}
+ul>li:first-child{
+    text-decoration: none;
+    
 }
 nav{
-    text-decoration: none;
-    display: inline;
+    background-color: #112B3C;
+    padding:15px;
+    float:left;
+    width:100%;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align:left;
+    margin-left: 5%;
+}
+
+ul li{
+    display:inline-block;
+}
+
+ul li a {
+    color: #EFEFEF;
+    text-align: center;
+    padding:5px 10px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #417D7A;
+    color: white;
+    border-radius: 3px 3px 3px 3px;
+}
+
 h1{
 text-align: center;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -14,3 +47,8 @@ h2{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+footer {
+
+color: #112B3C;
+font-size: 20px;
+}
