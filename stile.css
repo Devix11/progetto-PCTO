@@ -3,6 +3,24 @@ body{
     font-family: 'Quicksand', sans-serif;
     clear:both;
 }
+
+ #top   {
+    margin-top: 10px;
+    margin-bottom: -15px;
+    
+}
+
+#primo{
+    margin-top: 50px;   
+}
+
+#title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 350%;
+}
+
+}
+
 ul>li:first-child{
     text-decoration: none;
     
@@ -19,21 +37,48 @@ ul {
     margin: 0;
     padding: 0;
     text-align:left;
-    margin-left: 5%;
+}
+
+#home{
+    color: #EFEFEF;
+    text-align: center;
+    padding:5px 10px;
+    text-decoration: none;
+    margin-left: 1%;
 }
 
 ul li{
     display:inline-block;
 }
 
+#primo{
+    color: #EFEFEF;
+    text-align: center;
+    padding:5px 10px;
+    text-decoration: none;
+    margin-left: 0%;
+    margin-left: 3%;
+}
+ 
 ul li a {
     color: #EFEFEF;
     text-align: center;
     padding:5px 10px;
     text-decoration: none;
 }
-
-li a:hover{
+ul.tendina{
+    display:block;
+    box-sizing: border-box;
+    border-right: solid 2px black;
+    border-left: solid 2px black; 
+    display: none;
+}
+li#menu:hover>div{
+    text-decoration: underline;
+    display: block;
+    
+}
+nav li a:hover{
     background-color: #417D7A;
     color: white;
     border-radius: 3px 3px 3px 3px;
