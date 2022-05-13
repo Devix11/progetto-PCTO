@@ -4,25 +4,26 @@ body{
     clear:both;
 }
 
-#top{
-    margin-top: 2px;
-    margin-bottom: -25px;
-    background-image: url("bandiera.png");
-    opacity: 50%;
-    border-radius: 10px;
-    
-} 
-
-#bandiera{
-    opacity: 50%;
-    border-radius: 10px;
+section{
+    background-image: url("asd.jpg");
 }
 
+
+
+.titolo{
+    text-align:left;
+    float: left;
+    color: yellow;
+    font-size: 350%;
+    font-weight: bold;
+    
+}
 #title{
     font-family: 'Montserrat', sans-serif;
-    font-size: 350%;
-    opacity: 350%;
-    
+    font-size: 300%;
+    opacity: 100%;
+    text-align: left;
+    color: rgb(233, 229, 34);
 }
 
 #first {
@@ -35,9 +36,14 @@ body{
     margin-top: 20px; 
 }
 
+#first.home {
+    text-align: left;
+}
+
 #first>p {
     text-align: left;  
 }
+
 
 #second {
     color: rgb(0, 0, 0);
@@ -47,6 +53,9 @@ body{
     margin-left: 1.5%;
     margin-right: 1.5%;
     margin-top: 20px;
+}
+#second.home {
+    text-align: left;
 }
 
 #second>p {
@@ -63,6 +72,10 @@ body{
     margin-top: 20px;
 }
 
+#third.home {
+    text-align: left;
+}
+
 #third>p {
     text-align: left;
 }
@@ -77,18 +90,26 @@ body{
     margin-top: 20px;
 }
 
+#fourth.home {
+    text-align: left;
+}
+
 #fourth>p {
     text-align: left;
 }
 
 #fifth {
     color: rgb(0, 0, 0);
-    text-align: center;
     padding:5px 10px;
+    text-align: center;
     text-decoration: none;
     margin-left: 1.5%;
     margin-right: 1.5%;
     margin-top: 20px;
+}
+
+#fifth.home {
+    text-align: left;
 }
 
 #fifth>p {
@@ -101,21 +122,21 @@ ul>li:first-child{
 }
 
 ul#menu {
-	margin: 2%;
-	padding: 0%;
+	margin: 1px 1px 1px 1px;
+	padding: 1%;
 	list-style: none;
 	float:left;
 	width:100%;
-	background-color: rgb(66, 132, 231);
-	font-size:80%
+	background-color: rgb(46, 117, 224);
+	font-size:80%;
 }
+
 
 ul#menu li {
 	margin:0;
-	padding:0;
-	float:left;
+	padding:0%;
+	float:right;
 	display: block;
-    
 	position: relative;
 }
 
@@ -130,14 +151,16 @@ ul#menu li a {
 	-ms-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 ul#menu li a:hover {
-	background: rgb(209, 219, 61);
+	background: rgb(210, 219, 82);
 	color:#fff
 }
 
 ul#menu ul {
+    text-decoration: none;
 	margin:2px 0 0;
 	padding:0;
 	display:inline-block;
@@ -148,12 +171,12 @@ ul#menu ul {
 	top: 38px;
 	left: 0;
 	z-index:9999;
-	background: rgb(66, 132, 231);
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
+	background: rgb(99, 149, 224);
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
 }
 
 ul#menu li:hover ul {
@@ -169,7 +192,7 @@ ul#menu ul li {
 
 ul#menu ul a {
 	padding:10px;
-	width: 130px;
+	width: 140px;
 	display: block;
 	white-space: nowrap;
 	float: none;
@@ -177,7 +200,7 @@ ul#menu ul a {
 }
 
 ul#menu ul a:hover {
-	background-color: rgb(209, 219, 61);
+	background-color: rgb(216, 224, 98);
 	color:#fff;
 }
 
@@ -216,7 +239,6 @@ h1{
 }
 
 #title1{
-    margin-top: 150px;
     border-top: solid #000000 2px;
     border-bottom: solid #000000 2px;
 }
@@ -226,10 +248,7 @@ h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-footer {
-color: #112B3C;
-font-size: 20px;
-}
+
 
 #scroll {
     position:fixed;
@@ -260,5 +279,155 @@ font-size: 20px;
   #menu {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+footer{
+    color: #112B3C;
+    width:100%;
+    text-align: left;
+    margin-top:2%;
+    font-size: 0.9em;
+    position: relative;
+    bottom:2px;
+}
+ 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 615px){
+    nav{
+        clear:both;
+    }
+    
+    ul#menu {
+        margin: 1px 1px 1px 1px;
+        padding: 1%;
+        list-style: none;
+        float:right;
+        width:100%;
+        background-color: rgb(46, 117, 224);
+        font-size:80%
+        
+    }
+    
+    ul#menu li {
+        margin:0;
+        padding:0;
+        float:right;
+        display: block;
+        position: relative;
+    }
+    
+    ul#menu li a {
+        float: right;
+        padding:12px 30px;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration:none;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+    
+    ul#menu li a:hover {
+        background: rgb(210, 219, 82);
+        color:#fff
+    }
+    
+    ul#menu ul {
+        text-decoration: none;
+        margin:2px 0 0;
+        padding:0;
+        display:inline-block;
+        list-style: none;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 38px;
+        left: 0;
+        z-index:9999;
+        background: rgb(99, 149, 224);
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
+    
+    ul#menu li:hover ul {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    ul#menu ul li {
+        float: none;
+        display: block;
+        border: 0;
+    }
+    
+    ul#menu ul a {
+        padding:10px;
+        width: 140px;
+        display: block;
+        white-space: nowrap;
+        float: none;
+        text-transform: none;
+    }
+    
+    ul#menu ul a:hover {
+        background-color: rgb(216, 224, 98);
+        color:#fff;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align:left;
+    }
+    
+    #home{
+        color: #EFEFEF;
+        text-align: center;
+        padding: 5px 10px;
+        text-decoration: none;
+        margin-left: 1%;
+    }
+    
+    ul li{
+        display:inline-block;
+    }
+    
+    
+     
+    ul li a {
+        color: #EFEFEF;
+        text-align: center;
+        padding:5px 10px;
+        text-decoration: none;
+    }
+    #title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 100%;
+        opacity: 85%;
+        padding: 4%;
+        margin-bottom: 4%;
+        width: 100%;
+    }
+  }
