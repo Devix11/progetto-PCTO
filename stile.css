@@ -1,3 +1,9 @@
+*{
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+}
+
 body{
     background-color: #fff3e4;
     font-family: 'Quicksand', sans-serif;
@@ -120,10 +126,14 @@ ul>li:first-child{
     text-decoration: none;
     
 }
+#drop-menu{
+    width:100%;
+    //padding:20px;
+}
 
 ul#menu {
-	margin: 1px 1px 1px 1px;
-	padding: 1%;
+	//margin: 1px 1px 1px 1px;
+	padding:20px;
 	list-style: none;
 	float:left;
 	width:100%;
