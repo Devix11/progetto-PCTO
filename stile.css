@@ -5,16 +5,19 @@
 }
 
 body{
-    background-color: #fff3e4;
+    background-color: rgb(231, 230, 230);
     font-family: 'Quicksand', sans-serif;
     clear:both;
 }
 
 section{
     background-image: url("asd.jpg");
+    
 }
 
-
+nav#drop-menu1{
+    display:none;
+}
 
 .titolo{
     text-align:left;
@@ -147,6 +150,7 @@ ul#menu li {
 	float:right;
 	display: block;
 	position: relative;
+    margin-top: 7px;
 }
 
 ul#menu li a {
@@ -259,6 +263,7 @@ h2{
 
 
 
+
 #scroll {
     position:fixed;
     right:10px;
@@ -272,8 +277,10 @@ h2{
     -webkit-border-radius:60px;
     -moz-border-radius:60px;
     border-radius:60px
+
 }
-#scroll span {
+#scroll span {ù
+    visibility: hidden;
     position:absolute;
     top:50%;
     left:50%;
@@ -298,37 +305,74 @@ footer{
     bottom:2px;
 }
  
+/*
+████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+█░░░░░░██████████░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░███░░░░░░░░░░█░░░░░░░░░░░░░░████░░░░░░░░░░░░░░███░░░░░░██░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░███░░░░░░░░██░░░░░░░░█
+█░░▄▀░░░░░░░░░░░░░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀░░░░█░░▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░████░░▄▀▄▀▄▀▄▀▄▀░░███░░▄▀░░██░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀░░██░░▄▀▄▀░░█
+█░░▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░▄▀▄▀░░█░░░░▄▀░░░░█░░▄▀░░░░░░▄▀░░████░░▄▀░░░░░░▄▀░░███░░▄▀░░██░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░░░▄▀░░███░░░░▄▀░░██░░▄▀░░░░█
+█░░▄▀░░░░░░▄▀░░░░░░▄▀░░█░░▄▀░░█████████░░▄▀░░██░░▄▀░░███░░▄▀░░███░░▄▀░░██░░▄▀░░████░░▄▀░░██░░▄▀░░███░░▄▀░░██░░▄▀░░█░░▄▀░░█████████░░▄▀░░████░░▄▀░░█████░░▄▀▄▀░░▄▀▄▀░░███
+█░░▄▀░░██░░▄▀░░██░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░██░░▄▀░░███░░▄▀░░███░░▄▀░░░░░░▄▀░░████░░▄▀░░██░░▄▀░░███░░▄▀░░██░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░░░▄▀░░█████░░░░▄▀▄▀▄▀░░░░███
+█░░▄▀░░██░░▄▀░░██░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░██░░▄▀░░███░░▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░████░░▄▀░░██░░▄▀░░███░░▄▀░░██░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███████░░░░▄▀░░░░█████
+█░░▄▀░░██░░░░░░██░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░██░░▄▀░░███░░▄▀░░███░░▄▀░░░░░░▄▀░░████░░▄▀░░██░░▄▀░░███░░▄▀░░██░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░▄▀░░░░█████████░░▄▀░░███████
+█░░▄▀░░██████████░░▄▀░░█░░▄▀░░█████████░░▄▀░░██░░▄▀░░███░░▄▀░░███░░▄▀░░██░░▄▀░░████░░▄▀░░██░░▄▀░░███░░▄▀░░██░░▄▀░░█░░▄▀░░█████████░░▄▀░░██░░▄▀░░███████████░░▄▀░░███████
+█░░▄▀░░██████████░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░▄▀▄▀░░█░░░░▄▀░░░░█░░▄▀░░██░░▄▀░░████░░▄▀░░░░░░▄▀░░░░█░░▄▀░░░░░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░██░░▄▀░░░░░░███████░░▄▀░░███████
+█░░▄▀░░██████████░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀░░░░█░░▄▀▄▀▄▀░░█░░▄▀░░██░░▄▀░░████░░▄▀▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░██░░▄▀▄▀▄▀░░███████░░▄▀░░███████
+█░░░░░░██████████░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░███░░░░░░░░░░█░░░░░░██░░░░░░████░░░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░██░░░░░░░░░░███████░░░░░░███████
+████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+*/
 
 
+  @media only screen and (max-width: 1050px){
+    div{
+        font-size:30px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  @media only screen and (max-width: 615px){
     nav{
         clear:both;
+        width: 100%;
+        
+        
+    }
+    h1{
+        font-size: 45px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     
+    #title1{
+        border-top: solid #000000 2px;
+        border-bottom: solid #000000 2px;
+    }
+    a.titolo{
+        float: left;
+        text-align: left;
+        width: 100%;
+        background-color:rgb(46, 117, 224);
+        display: inline-block;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+        position: absolute;
+    }
+    nav#drop-menu{
+        display:none;
+        
+    }
+    nav#drop-menu1{
+        display: inline-block;
+        position: relative;
+        
+    }
+   
     ul#menu {
-        margin: 1px 1px 1px 1px;
-        /*padding: 1%;*/
+        margin: 60px -1px 1px 1px;
         list-style: none;
-        float:right;
-        width:100%;
+        float: right;
+        padding: 0px;
         background-color: rgb(46, 117, 224);
-        font-size:80%
+        font-size:80%;
+        height: 100%;
+        width: 30%;
+        position:relative;
     }
     
     ul#menu li {
@@ -337,10 +381,12 @@ footer{
         float:right;
         display: block;
         position: relative;
+        width: 100%;
+       
+        
     }
     
     ul#menu li a {
-        float: right;
         color: #fff;
         text-transform: uppercase;
         text-decoration:none;
@@ -350,22 +396,28 @@ footer{
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
         text-decoration: none;
+        text-align: center;
+        
     }
     
     ul#menu li a:hover {
         background: rgb(210, 219, 82);
-        color:#fff
+        color:#fff;
+        text-align: left;
+        width:100%;
+        
     }
     
     ul#menu ul {
         text-decoration: none;
         padding:0;
-        display:inline-block;
+        display: block;
         list-style: none;
         opacity: 0;
         visibility: hidden;
         position: absolute;
         left: 0;
+        margin-top: -10px;
         z-index:9999;
         background: rgb(99, 149, 224);
         -webkit-transition: all 0.4s ease;
@@ -373,6 +425,7 @@ footer{
         -ms-transition: all 0.4s ease;
         -o-transition: all 0.4s ease;
         transition: all 0.4s ease;
+        
     }
     
     ul#menu li:hover ul {
@@ -426,12 +479,20 @@ footer{
         padding:5px 10px;
         text-decoration: none;
     }
-    #title{
+    #titolo{
         font-family: 'Montserrat', sans-serif;
         font-size: 100%;
         opacity: 85%;
         padding: 4%;
         margin-bottom: 4%;
         width: 100%;
+        
+    }
+    section{
+        background-image: none;
+        height: 400px;
+        color: yellow;
+        background-color: rgb(46, 117, 224);
     }
   }
+  
