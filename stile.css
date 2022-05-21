@@ -246,7 +246,6 @@ ul li{
 section{
     background: url(../images/mountains.jpeg) no-repeat center center fixed;
 	display: table;
-	height: 100%;
 	position: relative;
 	width: auto;
     height: 100%;
@@ -323,7 +322,8 @@ ul{
     position: fixed;
     background-color: var(--black);
     overflow: hidden;
-
+    max-height: 0;
+    transition: max-height .5s ease-out;
 }
 .menu a{
     display: block;
@@ -333,10 +333,6 @@ ul{
 }
 .menu a:hover{
     background-color: #205375;
-}
-.nav{
-    max-height: 0;
-    transition: max-height .5s ease-out;
 }
 .hamb{
     cursor: pointer;
@@ -448,7 +444,7 @@ footer{
 ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 */
 
-@media only screen and (max-width: 100px){
+@media only screen and (max-width: 900px){
     
     #title1{
         width: 100%;
@@ -470,7 +466,6 @@ footer{
     }
     div *{   
         width: 98%;
-        min-width: 310px;
         margin: 0px auto;
         padding: 0px 0px;
         position: relative;
@@ -478,9 +473,5 @@ footer{
     .logo{
         font-size: 2.1em;    
     }
-    
-
-}
-@media only screen and (max-width: 900px){
-    
+   
 }
