@@ -204,38 +204,6 @@ ul#menu ul {
 	transition: all 0.4s ease;
 }
 
-ul#menu li:hover ul {
-	opacity: 1;
-	visibility: visible;
-}
-
-ul#menu ul li {
-	float: none;
-	display: block;
-	border: 0;
-}
-
-ul#menu ul a {
-	padding:10px;
-	width: 140px;
-	display: block;
-	white-space: nowrap;
-	float: none;
-	text-transform: none;
-}
-
-ul#menu ul a:hover {
-	background-color: rgb(216, 224, 98);
-	color:#fff;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align:left;
-}
-
 #home{
     color: #EFEFEF;
     text-align: center;
@@ -246,6 +214,18 @@ ul {
 
 ul li{
     display:inline-block;
+}
+
+#testi{
+    background-color: #f9f9f9;
+}
+
+.titoli{
+    color: #205375;
+}
+
+.testi{
+    color: #112B3C;
 }
 
 #foto{
@@ -288,7 +268,8 @@ h1{
 }
 
 #title1{
-    color: #1f1d1d;
+    color: #112B3C;
+    text-align: center;
 }
 h2{
     text-align: center;
@@ -351,7 +332,7 @@ ul{
     margin: auto;
 }
 .menu a:hover{
-    background-color: var(--gray);
+    background-color: #205375;
 }
 .nav{
     max-height: 0;
