@@ -290,7 +290,6 @@ h1{
 #title1{
     color: #1f1d1d;
 }
-
 h2{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -468,10 +467,17 @@ footer{
 ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 */
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 100px){
     
     #title1{
-        text-align: auto;
+        width: 100%;
+        text-align: center;
+        margin-left: 13%;
+        font-size: 1.8em;
+    }
+    h1{
+        width: 100%;
+        text-align: center;
     }
     body {
         font-size-adjust:none;
@@ -479,6 +485,7 @@ footer{
         font-variant:normal;
         font-weight:normal;
         width:100%;
+        clear:both;
     }
     div *{   
         width: 98%;
@@ -486,6 +493,9 @@ footer{
         margin: 0px auto;
         padding: 0px 0px;
         position: relative;
+    }
+    .logo{
+        font-size: 2.1em;    
     }
     
 
