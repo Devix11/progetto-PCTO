@@ -229,20 +229,16 @@ ul li{
 }
 
 #foto{
-    background: url(./images/bandiera1.png) no-repeat center center fixed;
+    background: url(./images/bandiera1.png) no-repeat center center fixed; 
 	display: table;
 	position: relative;
 	width: 100%;
 	background-size: cover;
-}
-
-#foto{
     max-width: 100%;
     max-height: 1080px;
+    
 }
-
 section{
-    background: url(./images/bandiera1.png) no-repeat center center fixed;
 	display: table;
 	position: relative;
 	width: auto;
@@ -267,6 +263,7 @@ h1{
 #title1{
     color: #112B3C;
     text-align: center;
+    background-image: url(./images/bandiera1.png);
 }
 
 h2{
@@ -443,6 +440,9 @@ footer{
 ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 */
 
+@media only screen and (mix-width: 2182px){
+    
+}
 @media only screen and (max-width: 900px){
     
     #testi{
@@ -463,7 +463,9 @@ footer{
         width:100%;
     }
     div *{   
-        width: 98%;
+        width: 100%;
         margin: 0px auto;
         padding: 0px 0px;
         position: relative;
+    }
+}
