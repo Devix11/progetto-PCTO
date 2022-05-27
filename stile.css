@@ -545,8 +545,9 @@ footer{
     img{
         display: none;
     }
-    div>p{
-
+    marquee{
+        height: 60px;
+        padding-top: 2%;
     }
 }
 
