@@ -557,22 +557,26 @@ footer{
     #first>p, #third>p{
         text-align: left;
     }
-    #first>p::after{
+   /* #first>p::after{
         text-align: right;
         content: url(./images/putinbielo.jpg);
+        width:50%;
     }
     #second>p::after{
         text-align: left;
         content: url(./images/putinzelemedia.jpg);
+        width: 30%;
     }
     #third>p::after{
         text-align: right;
         content: url(./images/joeputin.jpeg);
+        width:50%;
     }
     #fourth>p::after{
         text-align: left;
         content: url(./images/putin.jpg);
-    }
+        width:50%;
+    }*/
 }
 
 
