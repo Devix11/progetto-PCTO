@@ -3,42 +3,71 @@
     margin:0px;
     padding:0px;
 }
-a#top{
-    text-align: left;
-}
-.primasec{
+#primasec{
     width:100%;
     text-align: center;
+    position: relative;
+}
+
+#foto{ 
+    margin-top: 1%;
+	display: table;
+	width: 100%;
+	background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
     position: fixed;
-    z-index: 0;
+    z-index: -1; 
 }
-header{
-    position: absolute;
-    z-index: 9999999;  
+#top{
+    text-align: left;
+    float:left;
+    color: rgb(233, 229, 34);
+    font-weight:bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 300%;
+    opacity: 100%;
+    text-align: left;
+    z-index: 50;
+    position: sticky; top: 0%;
+    background-color: rgb(46, 117, 224);
+    width: 100%;
 }
+input,label{
+    margin-top: 0%;
+    z-index: 51;
+    position: sticky; top: 0%;
+}
+nav#nav{
+    z-index: 52;
+    position: sticky; top: 0%;
+}
+
 body{
     background-color: rgba(231, 230, 230, 0.863);
     font-family: 'Quicksand', sans-serif;
     clear:both;
     width: 100%;
-}
-section#testi{
-    float: left;
-    opacity: 90%;
-    background-color: transparent;
     
 }
-GiASoneBrutto
+section#testi{
+    opacity: 90%;
+    background-color: transparent;
+}
 #testi>*{
     max-width: 100%;
     width:100%;
     margin: 0%;
+    z-index: 10;
 }
 div#first{
-    padding-top: 0%;
+    padding-top:0%;
     float: right;
     margin-top: 0%;
-    background-color: transparent;
+    background-color: rgb(243, 241, 199);
+
 }
 #first>p{
     width: 50%;
@@ -46,7 +75,7 @@ div#first{
 }
 div#second{
     float: right;
-    background-color: transparent;
+    background-color: rgb(243, 241, 199);
 }
 #second>p{
     width: 50%;
@@ -54,7 +83,7 @@ div#second{
 }
 div#third{
     float: left;
-    background-color: transparent;
+    background-color: rgb(243, 241, 199);
 }
 #third>p{
     width: 50%;
@@ -62,7 +91,7 @@ div#third{
 }
 div#fourth{
     float: right;
-    background-color: transparent;
+    background-color: rgb(243, 241, 199);
 }
 #fourth>p{
     width: 50%;
@@ -77,28 +106,14 @@ section#testi{
     padding-top: 1%; 
 }
 section#testi>*{
-    z-index: 1;
+    z-index: 10;
+    position:relative;
 }
 
 nav#drop-menu1{
     display:none;
 }
-
-.titolo{
-    text-align:left;
-    float: left;
-    color: yellow;
-    font-size: 350%;
-    font-weight: bold;
     
-}
-#title{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 300%;
-    opacity: 100%;
-    text-align: left;
-    color: rgb(233, 229, 34);
-}
 #first{
     color: rgb(0, 0, 0);
     text-align: left;
@@ -132,7 +147,7 @@ nav#drop-menu1{
     
 
 }
-#third {
+#third{
     color: rgb(0, 0, 0);
     text-align: left;
     padding:10px 10px 10px 50px;
@@ -146,7 +161,7 @@ nav#drop-menu1{
     margin-left:5%;
     margin-top:5%;
 }
-#fourth {
+#fourth{
     color: rgb(0, 0, 0);
     text-align: right;
     padding:10px 50px 10px 10px;
@@ -216,7 +231,7 @@ ul#menu ul {
 	list-style: none;
 	opacity: 0;
 	visibility: hidden;
-	position: absolute;
+	position: relative;
 	top: 38px;
 	left: 0;
 	z-index:9999;
@@ -228,7 +243,7 @@ ul#menu ul {
 	transition: all 0.4s ease;
 }
 
-.titoli{
+#titoli{
     color: #205375;
     text-align: center;
     padding: 5px 10px;
@@ -245,22 +260,10 @@ ul li{
     font-size: 23px;
 }
 
-.testi{
+#testi{
     color: #112B3C;
 }
 
-#foto{
-    background: url(./images/bandiera1.png) no-repeat center center fixed; 
-	display: table;
-	width: 100%;
-	background-size: cover;
-    max-width: 100%;
-    max-height: 100%;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
-    position: sticky; top: 0%;
-    z-index: -50; 
-}
 section{
 	display:table;
 	position: relative;
@@ -283,7 +286,7 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#title1{
+#titolo{
     color: #112B3C;
     text-align: center;
     background-image: url(./images/bandiera1.png);
@@ -297,9 +300,12 @@ h2{
 footer{
     font-style: oblique;
 }
+    
 marquee{ 
-    background-color: #fff;
+    padding: 1.25%;
+    background-image: url(./images/bandiera1.png);
 }
+
 /*
 ███╗░░██╗░█████╗░██╗░░░██╗██████╗░░█████╗░██████╗░
 ████╗░██║██╔══██╗██║░░░██║██╔══██╗██╔══██╗██╔══██╗
@@ -325,14 +331,14 @@ ul{
     list-style: none;
 }
 
-.header{
+#header{
     background-color: var(--black);
     box-shadow: 1px 1px 5px 0px var(--gray);
     position: sticky;
     top: 0;
     width: 100%;
 }
-.logo{
+#logo{
     display: inline-block;
     color: var(--white);
     font-size: 60px;
@@ -341,7 +347,7 @@ ul{
     color: yellow;
     font-size: 300%;
 }
-.nav{
+#nav{
     width: 100%;
     height: 5.9%;
     position: fixed;
@@ -350,13 +356,13 @@ ul{
     max-height: 0;
     transition: max-height .5s ease-out;
 }
-.menu a{
+#menu a{
     display: block;
     padding: 16px;
     color: var(--white);
     margin: auto;
 }
-.menu a:hover{
+#menu a:hover{
     background-color: #205375;
 }
 .hamb{
@@ -470,7 +476,9 @@ footer{
 */
 
 @media only screen and (mix-width: 2182px){
-    
+    *{
+        display: none;
+    }
 }
 @media only screen and (max-width: 900px){
     
@@ -498,3 +506,505 @@ footer{
         position: relative;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

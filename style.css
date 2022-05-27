@@ -9,7 +9,9 @@ body{
     border-left: 3px solid blue;
     border-right: 3px solid blue;
     text-align: center;
-    
+    color: black;
+    background-image: url(./joe.jpg);
+
 }
 footer{
     text-align: center;
