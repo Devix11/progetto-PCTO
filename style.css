@@ -1,3 +1,21 @@
 h1{
-    color: blue;
+    color: yellow;
+    background-color: blue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2%;
+}
+body{
+    border-left: 3px solid blue;
+    border-right: 3px solid blue;
+    text-align: center;
+    
+}
+footer{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    background-color: blue;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
