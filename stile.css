@@ -33,7 +33,7 @@
     z-index: 50;
     position: sticky; top: 0%;
     background-color: rgb(46, 117, 224);
-    width: 100%;
+    width: 96%;
 }
 input,label{
     margin-top: 0%;
@@ -41,8 +41,10 @@ input,label{
     position: sticky; top: 0%;
 }
 nav#nav{
-    z-index: 52;
+    z-index: 9999;
     position: sticky; top: 0%;
+    background-color: rgb(46, 117, 224) ;
+    width: 4%;
 }
 
 body{
@@ -102,7 +104,7 @@ section#testi{
     width: 100%;
     padding: 2.5%;
     margin-top: 0%;
-    border: 2px solid red;
+   /* border: 2px solid red; */
     padding-top: 1%; 
 }
 section#testi>*{
@@ -120,7 +122,7 @@ nav#drop-menu1{
     padding:10px 10px 10px 50px;
     text-decoration: none;
     margin-top: 2%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: rgb(231, 231, 231);
 
 }
@@ -135,7 +137,7 @@ nav#drop-menu1{
     padding:10px 50px 10px 10px;
     text-decoration: none;
     margin-top: 2%;
-    border: 2px solid red;
+    /* border: 2px solid red; */ 
     background-color: rgb(231, 231, 231);
     
 }
@@ -153,7 +155,7 @@ nav#drop-menu1{
     padding:10px 10px 10px 50px;
     text-decoration: none;
     margin-top: 2%;
-    border: 2px solid red;
+   /* border: 2px solid red;*/ 
     background-color: rgb(231, 231, 231);
 }
 #third>img{
@@ -167,7 +169,7 @@ nav#drop-menu1{
     padding:10px 50px 10px 10px;
     text-decoration: none;
     margin-top: 2%;
-    border: 2px solid red;
+    /* border: 2px solid red; */ 
     background-color: rgb(231, 231, 231);
     
 }
@@ -181,9 +183,10 @@ ul>li:first-child{
     text-decoration: none;
     
 }
-#drop-menu{
+#menu{
     width:100%;
 }
+
 
 ul#menu {
 	list-style: none;
@@ -300,7 +303,6 @@ h2{
 footer{
     font-style: oblique;
     font-weight: bold;
-<<<<<<< HEAD
     height: 15px;
 }
     
@@ -309,7 +311,14 @@ marquee{
     padding: 1.25%;
     background-image: url(./images/bandiera1.png);
 }
-
+#spazio{
+    height: 700px;
+    text-align: center;
+    font-size: 300%;
+    font-weight: bolder;
+    padding-top: 17%;
+    color: darkorange;
+}
 /*
 ███╗░░██╗░█████╗░██╗░░░██╗██████╗░░█████╗░██████╗░
 ████╗░██║██╔══██╗██║░░░██║██╔══██╗██╔══██╗██╔══██╗
