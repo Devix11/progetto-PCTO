@@ -177,6 +177,7 @@ nav#drop-menu1{
     width: 800px;
     margin-right:2%;
     margin-top:3%;
+    width: 40%;
 }
 
 ul>li:first-child{
@@ -317,7 +318,7 @@ marquee{
     font-size: 300%;
     font-weight: bolder;
     padding-top: 17%;
-    color: darkorange;
+    color: yellow;
 }
 /*
 ███╗░░██╗░█████╗░██╗░░░██╗██████╗░░█████╗░██████╗░
@@ -515,12 +516,13 @@ footer{
         text-align: center;
     }
     #testi div{
-        padding:50px 200px 50px 200px;
+        padding: 5% 10%;
         background-color: lightgrey;
         text-align: center;
     }
     h2{
         font-size: medium;
+        padding-bottom: 4%;
     }
     #header{
         text-align: center;
@@ -548,6 +550,28 @@ footer{
     marquee{
         height: 60px;
         padding-top: 2%;
+    }
+    #second>p, #fourth>p{
+        text-align: right;
+    }
+    #first>p, #third>p{
+        text-align: left;
+    }
+    #first>p::after{
+        text-align: right;
+        content: url(./images/putinbielo.jpg);
+    }
+    #second>p::after{
+        text-align: left;
+        content: url(./images/putinzelemedia.jpg);
+    }
+    #third>p::after{
+        text-align: right;
+        content: url(./images/joeputin.jpeg);
+    }
+    #fourth>p::after{
+        text-align: left;
+        content: url(./images/putin.jpg);
     }
 }
 
