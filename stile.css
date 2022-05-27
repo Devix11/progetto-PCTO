@@ -299,10 +299,11 @@ h2{
 
 footer{
     font-style: oblique;
+    font-weight: bold;
 }
     
 marquee{ 
-    padding: 1.25%;
+    padding: 1.1%;
     background-image: url(./images/bandiera1.png);
 }
 
