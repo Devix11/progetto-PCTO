@@ -299,9 +299,12 @@ h2{
 
 footer{
     font-style: oblique;
+    font-weight: bold;
+    height: 15px;
 }
     
-marquee{ 
+marquee{
+    margin-top: 1%;
     padding: 1.25%;
     background-image: url(./images/bandiera1.png);
 }
