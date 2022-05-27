@@ -350,6 +350,7 @@ ul{
     position: sticky;
     top: 0;
     width: 100%;
+    
 }
 #logo{
     display: inline-block;
@@ -496,14 +497,34 @@ footer{
 @media only screen and (max-width: 900px){
     
     #testi{
+        width: 50%;
+    }
+    #top{
+        font-size: 1,3em;
+        text-align: left;
         width: 80%;
-        margin: 10%;
+    }
+    #nav{
+        width: 20%;   
+    }
+    #header::after{
+        content: url(./images/mountains.jpeg);
+    }
+    .testi{
+        font-size: small;
+        text-align: center;
     }
     #testi div{
         padding:50px 200px 50px 200px;
+        background-color: lightgrey;
+        text-align: center;
     }
-    #title1{
-        text-align: auto;
+    h2{
+        font-size: medium;
+    }
+    #header{
+        text-align: center;
+        width: 100%;
     }
     body {
         font-size-adjust:none;
@@ -512,11 +533,20 @@ footer{
         font-weight:normal;
         width:100%;
     }
-    div *{   
-        width: 100%;
-        margin: 0px auto;
-        padding: 0px 0px;
-        position: relative;
+    #spazio{
+        display: none;
+    }
+    #first, #second, #third, #fourth{
+        background-color:yellow ;
+    }
+    #foto{
+        display: none;
+    }
+    img{
+        display: none;
+    }
+    div>p{
+
     }
 }
 
