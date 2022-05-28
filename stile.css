@@ -192,10 +192,6 @@ section#testi>*{
     z-index: 10;
     position: relative;
 }
-
-nav#drop-menu1{
-    display:none;
-}
     
 #first{
     color: rgb(0, 0, 0);
@@ -343,10 +339,6 @@ ul#menu ul {
     margin-left: 1%;
 }
 
-ul li{
-    display:inline-block;
-}
-
 #testi{
     background-color: rgba(255, 255, 255, 0.692);
     font-size: 23px;
@@ -364,12 +356,6 @@ section{
     height: 100%;
 }
  
-ul li a {
-    color: #EFEFEF;
-    text-align: center;
-    padding:5px 10px;
-    text-decoration: none;
-}
 
 h1{
     font-size: 45px;
@@ -407,21 +393,17 @@ marquee{
 ██║╚████║██╔══██║░╚████╔╝░██╔══██╗██╔══██║██╔══██╗
 ██║░╚███║██║░░██║░░╚██╔╝░░██████╦╝██║░░██║██║░░██║
 ╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝*/
-
-:root{
-    --white: #f9f9f9;
-    --black: rgb(46, 117, 224);
-    --gray: #85888C;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body{
-    font-family:'Quicksand', sans-serif;
-}
-a{
-    text-decoration: none;
-}
-ul{
-    list-style: none;
+body {
+  background: #272727;
+  font-family: "Montserrat", sans-serif;
 }
 
 #header{
@@ -473,6 +455,7 @@ ul{
 #menu {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
 footer{
     color: #112B3C;
     width:100%;
@@ -549,6 +532,7 @@ footer{
     }
     #first, #second, #third, #fourth{
         background-color:yellow ;
+        text-align: center;
     }
     #foto{
         display: none;
