@@ -248,6 +248,24 @@ p#img2{
     width:82%;
 }
 
+div#first{
+    display: flex;
+    clear: both;
+}
+
+div#first>*{
+    float: left;
+}
+
+div#second{
+    display: flex;
+    clear: both;
+}
+
+div#second>*{
+    float: right;
+}
+
 div#third>img{
     margin:1.5%;
     margin-bottom: 0%;
@@ -266,18 +284,40 @@ div#fourth>img{
     width: 67%;
 }
 
-.titoli{
-    padding-top: 1.2%;
+.titoli#first{
+    margin-bottom: 0%;
+    padding-bottom: 1.2%;
+    padding-top: 1.6%;
+}
+
+.titoli#second{
+    margin-bottom: 0%;
+    padding-bottom: 1.2%;
+    padding-top: 1.6%;
+}
+
+.titoli#third{
+    margin-bottom: 0%;
+    padding-bottom: 1.2%;
+    padding-top: 1.6%;
+}
+
+.titoli#fourth{
+    margin-bottom: 0%;
+    padding-bottom: 1.2%;
+    padding-top: 1.6%;
 }
 
 #first>p{
     text-align: left;
+    margin-top: 0%;
     margin:1.5%;
     padding-bottom:1.7%;
 }
 
 #second>p{
-    text-align: right;
+    margin-top: 0%;
+    text-align: left;
     margin:1.5%;
     padding-bottom:1.7%;
 }
