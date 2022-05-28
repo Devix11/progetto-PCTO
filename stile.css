@@ -112,50 +112,6 @@ a:hover {
     text-decoration: none;
 }
 
-
-
-div#first{
-    padding-top:0%;
-    float: right;
-    margin-top: 0%;
-    background-color: rgb(243, 241, 199);
-}
-
-#first>p{
-    width: 50%;
-    float: left;
-}
-
-div#second{
-    float: right;
-    background-color: rgb(243, 241, 199);
-}
-
-#second>p{
-    width: 50%;
-    float: right;
-}
-
-div#third{
-    float: left;
-   
-}
-
-#third>p{
-    width: 50%;
-    float: left;
-}
-
-div#fourth{
-    float: right;
-    background-color: rgb(243, 241, 199);
-}
-
-#fourth>p{
-    width: 50%;
-    float: right;
-}
-
 section#testi{
     clear: both;
     width: 100%;
@@ -418,6 +374,8 @@ div#fourth{
 
 #img2{
     text-align: center;
+    display: inline-block;
+    width:80%;
 }
 
 /*
