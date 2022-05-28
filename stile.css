@@ -3,14 +3,18 @@
     margin:0px;
     padding:0px;
 }
+
 #primasec{
     width:100%;
     text-align: center;
     position: relative;
 }
 
+#header>div{
+    display: flex;
+}
 #foto{ 
-    margin-top: 1%;
+    margin-top: 2%;
 	display: table;
 	width: 100%;
 	background-size: cover;
@@ -21,6 +25,17 @@
     position: fixed;
     z-index: -1; 
 }
+
+#spazio{
+    height: 1200px;
+    text-align: center;
+    font-size: 300%;
+    font-weight: bolder;
+    padding-top: 21%;
+    color: yellow;
+    visibility: hidden;
+}
+
 #top{
     text-align: left;
     float:left;
@@ -35,35 +50,43 @@
     background-color: rgb(46, 117, 224);
     width: 96%;
 }
+
 input,label{
     margin-top: 0%;
     z-index: 51;
     position: sticky; top: 0%;
 }
+
 nav#nav{
+    margin-top: 0%;
+    padding-top: 0%;
     z-index: 9999;
     position: sticky; top: 0%;
     background-color: rgb(46, 117, 224) ;
     width: 4%;
+    height: ;
 }
 
 body{
-    background-color: rgba(231, 230, 230, 0.863);
+    background-color: rgb(46, 117, 224);
     font-family: 'Quicksand', sans-serif;
     clear:both;
     width: 100%;
     
 }
+
 section#testi{
     opacity: 90%;
     background-color: transparent;
 }
+
 #testi>*{
     max-width: 100%;
     width:100%;
     margin: 0%;
     z-index: 10;
 }
+
 div#first{
     padding-top:0%;
     float: right;
@@ -71,34 +94,42 @@ div#first{
     background-color: rgb(243, 241, 199);
 
 }
+
 #first>p{
     width: 50%;
     float: left;
 }
+
 div#second{
     float: right;
     background-color: rgb(243, 241, 199);
 }
+
 #second>p{
     width: 50%;
     float: right;
 }
+
 div#third{
     float: left;
     background-color: rgb(243, 241, 199);
 }
+
 #third>p{
     width: 50%;
     float: left;
 }
+
 div#fourth{
     float: right;
     background-color: rgb(243, 241, 199);
 }
+
 #fourth>p{
     width: 50%;
     float: right;
 }
+
 section#testi{
     clear: both;
     width: 100%;
@@ -126,11 +157,13 @@ nav#drop-menu1{
     background-color: rgb(231, 231, 231);
 
 }
+
 #first>img{
     width: 700px;
     margin-left:5%;
     margin-top:0.5%;
 }
+
 #second {
     color: rgb(0, 0, 0);
     text-align: right;
@@ -141,6 +174,7 @@ nav#drop-menu1{
     background-color: rgb(231, 231, 231);
     
 }
+
 #second>img{
     width: 700px;
     margin-right:5%;
@@ -158,11 +192,13 @@ nav#drop-menu1{
    /* border: 2px solid red;*/ 
     background-color: rgb(231, 231, 231);
 }
+
 #third>img{
     width: 700px;
     margin-left:5%;
     margin-top:5%;
 }
+
 #fourth{
     color: rgb(0, 0, 0);
     text-align: right;
@@ -173,6 +209,7 @@ nav#drop-menu1{
     background-color: rgb(231, 231, 231);
     
 }
+
 #fourth>img{
     width: 800px;
     margin-right:2%;
@@ -184,10 +221,10 @@ ul>li:first-child{
     text-decoration: none;
     
 }
+
 #menu{
     width:100%;
 }
-
 
 ul#menu {
 	list-style: none;
@@ -196,7 +233,6 @@ ul#menu {
 	background-color: rgb(46, 117, 224);
 	font-size:80%;
 }
-
 
 ul#menu li {
 	margin:0;
@@ -275,7 +311,6 @@ section{
 	background-size: cover;
     height: 100%;
 }
-
  
 ul li a {
     color: #EFEFEF;
@@ -312,14 +347,7 @@ marquee{
     padding: 1.25%;
     background-image: url(./images/bandiera1.png);
 }
-#spazio{
-    height: 700px;
-    text-align: center;
-    font-size: 300%;
-    font-weight: bolder;
-    padding-top: 17%;
-    color: yellow;
-}
+
 /*
 ███╗░░██╗░█████╗░██╗░░░██╗██████╗░░█████╗░██████╗░
 ████╗░██║██╔══██╗██║░░░██║██╔══██╗██╔══██╗██╔══██╗
@@ -335,7 +363,6 @@ marquee{
 }
 
 body{
-    background-color: var(--white);
     font-family:'Quicksand', sans-serif;
 }
 a{
@@ -365,10 +392,11 @@ ul{
 #nav{
     width: 100%;
     height: 5.9%;
-    /*position: fixed;*/
+    position: sticky;
     background-color: var(--black);
-    /*overflow: hidden;*/
+    overflow: hidden;
     max-height: 0;
+    z-index: 55;
     transition: max-height .5s ease-out;
 }
 #menu a{
@@ -428,11 +456,6 @@ ul{
     transform: rotate(45deg);
     top:0;
 }
-
-
-
-
-
 
 #scroll {
     position:fixed;
