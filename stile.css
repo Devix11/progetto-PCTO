@@ -1,9 +1,73 @@
-*{
-    box-sizing:border-box;
-    margin:0px;
-    padding:0px;
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
+  
+body {
+    background: #272727;
+    font-family: "Montserrat", sans-serif;
+}
+  
+.navMenu {
+    background-color: rgb(46, 117, 224);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+  
+.navMenu a {
+    padding-left: 2%;
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 12%;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+  
+.navMenu a:hover {
+    color: #fddb3a;
+    background-color: rgb(243, 241, 199);
+}
+  
+.navMenu a:nth-child(1):hover ~ .dot {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+  
+.navMenu a:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(110px);
+    transform: translateX(110px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+  
+.navMenu a:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+  
+.navMenu a:nth-child(4):hover ~ .dot {
+    -webkit-transform: translateX(285px);
+    transform: translateX(285px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+  
 #primasec{
     width:100%;
     text-align: center;
@@ -12,9 +76,12 @@
 
 #header>div{
     display: flex;
+    position:sticky; top: 0%;
+    z-index: 80;
+
 }
+
 #foto{ 
-    margin-top: 2%;
 	display: table;
 	width: 100%;
 	background-size: cover;
@@ -51,28 +118,11 @@
     width: 96%;
 }
 
-input,label{
-    margin-top: 0%;
-    z-index: 51;
-    position: sticky; top: 0%;
-}
-
-nav#nav{
-    margin-top: 0%;
-    padding-top: 0%;
-    z-index: 9999;
-    position: sticky; top: 0%;
-    background-color: rgb(46, 117, 224) ;
-    width: 4%;
-    height: ;
-}
-
 body{
     background-color: rgb(46, 117, 224);
     font-family: 'Quicksand', sans-serif;
     clear:both;
-    width: 100%;
-    
+    width: 100%;   
 }
 
 section#testi{
@@ -140,7 +190,7 @@ section#testi{
 }
 section#testi>*{
     z-index: 10;
-    position:relative;
+    position: relative;
 }
 
 nav#drop-menu1{
@@ -183,6 +233,7 @@ nav#drop-menu1{
     
 
 }
+
 #third{
     color: rgb(0, 0, 0);
     text-align: left;
@@ -228,34 +279,36 @@ ul>li:first-child{
 
 ul#menu {
 	list-style: none;
-	float:left;
 	width:100%;
 	background-color: rgb(46, 117, 224);
 	font-size:80%;
+    top: 1
+    
 }
 
 ul#menu li {
 	margin:0;
 	padding:0%;
-	float:right;
 	display: block;
-	position: relative;
+    position: static; top: 7px;
     margin-top: 7px;
+    z-index: 56;
 }
 
 ul#menu li a {
-	float: left;
 	padding:12px 30px;
 	color: #fff;
 	text-transform: uppercase;
 	text-decoration:none;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-ms-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
     text-decoration: none;
     width: 100%;
+    position: static; top: 7px;
+    z-index: 57;
 }
 
 ul#menu li a:hover {
@@ -265,22 +318,21 @@ ul#menu li a:hover {
 
 ul#menu ul {
     text-decoration: none;
-	margin:2px 0 0;
+	margin:2px 0px 0px;
 	padding:0;
 	display:inline-block;
 	list-style: none;
 	opacity: 0;
 	visibility: hidden;
-	position: relative;
-	top: 38px;
+	position: sticky; top: 7px;
 	left: 0;
 	z-index:9999;
 	background: rgb(99, 149, 224);
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	-ms-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
-	transition: all 0.4s ease;
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-ms-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
 }
 
 #titoli{
@@ -358,7 +410,7 @@ marquee{
 
 :root{
     --white: #f9f9f9;
-    --black: rgb(46, 117, 224);;
+    --black: rgb(46, 117, 224);
     --gray: #85888C;
 }
 
@@ -380,6 +432,7 @@ ul{
     width: 100%;
     
 }
+
 #logo{
     display: inline-block;
     color: var(--white);
@@ -388,73 +441,6 @@ ul{
     font-family: 'Montserrat', sans-serif;
     color: yellow;
     font-size: 300%;
-}
-#nav{
-    width: 100%;
-    height: 5.9%;
-    position: sticky;
-    background-color: var(--black);
-    overflow: hidden;
-    max-height: 0;
-    z-index: 55;
-    transition: max-height .5s ease-out;
-}
-#menu a{
-    display: inline-block;
-    padding: 16px;
-    color: var(--white);
-    margin: auto;
-}
-#menu a:hover{
-    background-color: #205375;
-}
-.hamb{
-    cursor: pointer;
-    float: right;
-    padding: 40px 20px;
-}
-
-.hamb-line {
-    background: var(--white);
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 24px;
-
-}
-.hamb-line::before,
-.hamb-line::after{
-    background: var(--white);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-.hamb-line::before{
-    top: 5px;
-}
-.hamb-line::after{
-    top: -5px;
-}
-
-.side-menu {
-    display: none;
-}
-.side-menu:checked ~ nav{
-    max-height: 100%;
-}
-.side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
-}
-.side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top:0;
-}
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
 }
 
 #scroll {
@@ -469,9 +455,9 @@ ul{
     display:none;
     -webkit-border-radius:60px;
     -moz-border-radius:60px;
-    border-radius:60px
-
+    border-radius:60px;
 }
+
 #scroll span {
     position:absolute;
     top:50%;
@@ -484,7 +470,7 @@ ul{
     border-bottom-color:#ffffff;
 }
 
-  #menu {
+#menu {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 footer{
