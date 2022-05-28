@@ -563,6 +563,7 @@ footer{
     }
     #first, #second, #third, #fourth{
         background-color:yellow ;
+        text-align: center;
     }
     #foto{
         display: none;
