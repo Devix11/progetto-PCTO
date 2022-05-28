@@ -457,7 +457,13 @@ footer{
     position: relative;
     bottom:2px;
 }
- 
+nav.navMenu2{
+    display: none;
+}
+img#foto2{
+    display: none;
+
+}
 /*
 ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 █░░░░░░██████████░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░███░░░░░░░░░░█░░░░░░░░░░░░░░████░░░░░░░░░░░░░░███░░░░░░██░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░███░░░░░░░░██░░░░░░░░█
@@ -474,36 +480,70 @@ footer{
 ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 */
 
-@media only screen and (mix-width: 2182px){
-    *{
+@media only screen and (max-width: 715px){
+    section#primasec{
+        width: 100%;
+        display: flex;
+        position:static;
+    }
+    body{
+        clear: both;
+    }
+    .navMenu{
         display: none;
     }
-}
-@media only screen and (max-width: 900px){
-    
+    #foto{
+        display: none;
+    }
+    #foto2{
+        width: 100%;
+        position: fixed;
+        display: contents;
+    }
+    .navMenu2{
+        float:left;
+        position:relative;
+        display: inline-block;
+        z-index: 9999;
+    }
+    #spazio{
+        visibility: hidden;
+        height: 0%;
+    }
     #testi{
         width: 50%;
     }
     #top{
         font-size: 1,3em;
-        text-align: left;
+        text-align: center;
         width: 80%;
     }
     #nav{
         width: 20%;   
     }
-    #header::after{
-        content: url(./images/mountains2.jpeg);
+    header#header>img{
+        position: fixed;
+        z-index: -1;
+        width: 90%;
+
     }
+
+    nav.navMenu{
+        max-height: fit-content;
+        width: 100%;
+    }
+
     .testi{
         font-size: small;
         text-align: center;
     }
+
     #testi div{
         padding: 5% 10%;
-        background-color: lightgrey;
+        background-color: rgb(243, 241, 199);
         text-align: center;
     }
+
     h2{
         font-size: medium;
         padding-bottom: 4%;
@@ -518,6 +558,7 @@ footer{
         font-variant:normal;
         font-weight:normal;
         width:100%;
+        background-color: rgb(46, 117, 224);
     }
     #spazio{
         display: none;
@@ -536,31 +577,7 @@ footer{
         height: 60px;
         padding-top: 2%;
     }
-    #second>p, #fourth>p{
-        text-align: right;
-    }
-    #first>p, #third>p{
-        text-align: left;
-    }
-    /*#first>p::after{
-        text-align: right;
-        content: url(./images/putinbielo.jpg);
-    }
-    #second>p::after{
-        text-align: left;
-        content: url(./images/putinzelemedia.jpg);
-    }
-    #third>p::after{
-        text-align: right;
-        content: url(./images/joeputin.jpeg);
-    }
-    #fourth>p::after{
-        text-align: left;
-        content: url(./images/putin.jpg);
-    }*/
 }
-
-
 
 
 
