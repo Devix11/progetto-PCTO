@@ -63,7 +63,6 @@ a:hover {
 #primasec{
     width:100%;
     text-align: center;
-    position: relative;
 }
 
 #header>div{
@@ -113,6 +112,8 @@ a:hover {
 }
 
 section#testi{
+    display: block;
+    text-align: center;
     clear: both;
     width: 100%;
     padding: 2.5%;
@@ -121,72 +122,172 @@ section#testi{
     padding-top: 1%; 
 }
 
+
+#titoli{
+    color: #205375;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-left: 1%;
+}
+
+#testi{
+    background-color: rgba(255, 255, 255, 0.692);
+    font-size: 23px;
+}
+
+#testi{
+    color: #112B3C;
+}
+
+h1{
+    font-size: 45px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#titolo{
+    color: #112B3C;
+    text-align: center;
+    background-image: url(./images/bandiera1.png);
+}
+
+h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer{
+    font-style: oblique;
+    font-weight: bold;
+    height: 15px;
+}
+    
+marquee{
+    margin-top: 1%;
+    padding: 1.25%;
+    background-image: url(./images/bandiera1.png);
+}
+
+section#testi{
+    clear: both;
+    margin-top: 0%;
+    padding-top: 0%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    opacity: 90%;
+    background-color: transparent;
+}
+
 section#testi>*{
-    z-index: 10;
-    position: relative;
+    clear:both;
 }
-    
-#first{
+#testi>*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 100%;
+    width:100%;
+    margin: 1%;
+    background-color: rgb(243, 241, 199);
+}
+
+div#first{
+    clear: both;
+
+}
+
+div#second{
+    clear: both;
+}
+
+p.testi{
+    display: block;
+    margin-top: 1%;
     color: rgb(0, 0, 0);
-    text-align: left;
-    padding:10px 10px 10px 50px;
-    text-decoration: none;
-    margin-top: 2%;
     /* border: 2px solid red; */
-    background-color: rgb(231, 231, 231);
-
 }
 
-#second {
-    color: rgb(0, 0, 0);
-    text-align: right;
-    padding:10px 50px 10px 10px;
-    text-decoration: none;
-    margin-top: 2%;
-    /* border: 2px solid red; */ 
-    background-color: rgb(231, 231, 231);
-    
-}
-
-#third{
-    color: rgb(0, 0, 0);
+p.left{
+    width: 25%;
+    float: left;
     text-align: left;
-    padding:10px 10px 10px 50px;
+    padding:15px 18px 15px 15px;
     text-decoration: none;
     margin-top: 2%;
-   /* border: 2px solid red;*/ 
-    background-color: rgb(231, 231, 231);
 }
 
-#third>img{
-    width: 700px;
-    margin-left:5%;
-    margin-top:5%;
-}
-
-#fourth{
-    color: rgb(0, 0, 0);
+p.right{
+    width: 25%;
+    float: right;
     text-align: right;
-    padding:10px 50px 10px 10px;
+    padding:15px 15px 15px 18px;
     text-decoration: none;
     margin-top: 2%;
-    /* border: 2px solid red; */ 
-    background-color: rgb(231, 231, 231);
-    
 }
 
-#fourth>img{
-    width: 800px;
-    margin-right:2%;
-    margin-top:3%;
+img.left{
+    float: left;
+    text-align: left;
     width: 40%;
+    margin: 1%;
 }
 
-ul>li:first-child{
-    text-decoration: none;
-    
+img.right{
+    float: right;
+    text-align: right;
+    width: 40%;
+    margin: 1%;
 }
 
+.titoli{
+    margin-top: 1%;
+}
+
+p#img2{
+    text-align: center;
+    display: inline-block;
+    width:82%;
+}
+
+div#third>img{
+    margin:1.5%;
+    margin-bottom: 0%;
+    width: 70%;
+    padding-bottom: 0%;
+}
+
+div#third>p{
+    margin: 0%;
+    padding: 1.5%;
+    padding-bottom:1.7%;
+}
+
+div#fourth>img{
+    margin:1.5%;
+    width: 67%;
+}
+
+.titoli{
+    padding-top: 1.2%;
+}
+
+#first>p{
+    text-align: left;
+    margin:1.5%;
+    padding-bottom:1.7%;
+}
+
+#second>p{
+    text-align: right;
+    margin:1.5%;
+    padding-bottom:1.7%;
+}
+/*
+███╗░░██╗░█████╗░██╗░░░██╗██████╗░░█████╗░██████╗░
+████╗░██║██╔══██╗██║░░░██║██╔══██╗██╔══██╗██╔══██╗
+██╔██╗██║███████║╚██╗░██╔╝██████╦╝███████║██████╔╝
+██║╚████║██╔══██║░╚████╔╝░██╔══██╗██╔══██║██╔══██╗
+██║░╚███║██║░░██║░░╚██╔╝░░██████╦╝██║░░██║██║░░██║
+╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝*/
 #menu{
     width:100%;
 }
@@ -249,142 +350,6 @@ ul#menu ul {
 	transition: all 0.25s ease;
 }
 
-#titoli{
-    color: #205375;
-    text-align: center;
-    padding: 5px 10px;
-    text-decoration: none;
-    margin-left: 1%;
-}
-
-#testi{
-    background-color: rgba(255, 255, 255, 0.692);
-    font-size: 23px;
-}
-
-#testi{
-    color: #112B3C;
-}
-
-section{
-	display:table;
-	position: relative;
-	width: auto;
-	background-size: cover;
-    height: 100%;
-}
- 
-
-h1{
-    font-size: 45px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#titolo{
-    color: #112B3C;
-    text-align: center;
-    background-image: url(./images/bandiera1.png);
-}
-
-h2{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-footer{
-    font-style: oblique;
-    font-weight: bold;
-    height: 15px;
-}
-    
-marquee{
-    margin-top: 1%;
-    padding: 1.25%;
-    background-image: url(./images/bandiera1.png);
-}
-
-section#testi{
-    margin-top: 0%;
-    padding-top: 0%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    opacity: 90%;
-    background-color: transparent;
-}
-
-#testi>*{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    max-width: 100%;
-    width:100%;
-    margin: 1%;
-    background-color: rgb(243, 241, 199);
-}
-
-p.testi{
-    width: 20%;
-    display: block;
-    margin-top: 1%;
-    color: rgb(0, 0, 0);
-    /* border: 2px solid red; */
-}
-
-p.left{
-    float: left;
-    text-align: left;
-    padding:15px 18px 15px 15px;
-    text-decoration: none;
-    margin-top: 2%;
-}
-
-p.right{
-    float: right;
-    text-align: right;
-    padding:15px 15px 15px 18px;
-    text-decoration: none;
-    margin-top: 2%;
-}
-
-img#img{
-    width: 40%%;
-    margin: 1%;
-}
-
-img.left{
-    float: left;
-    text-align: left;
-}
-
-img.right{
-    float: right;
-    text-align: right;
-}
-
-.titoli{
-    margin-top: 1%;
-}
-
-div#third{
-    clear:none ;
-}
-
-div#fourth{
-    clear:none ;
-}
-
-#img2{
-    text-align: center;
-    display: inline-block;
-    width:80%;
-}
-
-/*
-███╗░░██╗░█████╗░██╗░░░██╗██████╗░░█████╗░██████╗░
-████╗░██║██╔══██╗██║░░░██║██╔══██╗██╔══██╗██╔══██╗
-██╔██╗██║███████║╚██╗░██╔╝██████╦╝███████║██████╔╝
-██║╚████║██╔══██║░╚████╔╝░██╔══██╗██╔══██║██╔══██╗
-██║░╚███║██║░░██║░░╚██╔╝░░██████╦╝██║░░██║██║░░██║
-╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
